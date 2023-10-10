@@ -7,12 +7,12 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/grpc-server-demo/wallet/pkg/jwt"
+	"github.com/grpc-connectgo-api-demo/wallet/pkg/jwt"
 
-	"github.com/grpc-server-demo/wallet/db/postgresql"
-	db "github.com/grpc-server-demo/wallet/db/sqlc"
+	"github.com/grpc-connectgo-api-demo/wallet/db/postgresql"
+	db "github.com/grpc-connectgo-api-demo/wallet/db/sqlc"
 
-	"github.com/grpc-server-demo/wallet/service/api"
+	"github.com/grpc-connectgo-api-demo/wallet/service/api"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/pflag"

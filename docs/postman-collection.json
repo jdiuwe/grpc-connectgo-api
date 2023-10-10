@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "4c7a08e4-0399-488d-b664-087ddb506928",
-		"name": "grpc-server-demo-wallet-rest-api",
+		"name": "grpc-connectgo-api-demo-wallet-rest-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "18535776"
 	},

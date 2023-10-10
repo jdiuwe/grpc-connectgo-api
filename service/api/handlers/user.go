@@ -7,10 +7,10 @@ import (
 
 	"connectrpc.com/connect"
 	"github.com/gofrs/uuid"
-	db "github.com/grpc-server-demo/wallet/db/sqlc"
-	v1 "github.com/grpc-server-demo/wallet/gen/go/api/user/v1"
-	"github.com/grpc-server-demo/wallet/gen/go/api/user/v1/userv1connect"
-	"github.com/grpc-server-demo/wallet/pkg/jwt"
+	db "github.com/grpc-connectgo-api-demo/wallet/db/sqlc"
+	v1 "github.com/grpc-connectgo-api-demo/wallet/gen/go/api/user/v1"
+	"github.com/grpc-connectgo-api-demo/wallet/gen/go/api/user/v1/userv1connect"
+	"github.com/grpc-connectgo-api-demo/wallet/pkg/jwt"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

@@ -5,12 +5,13 @@
 package userv1connect
 
 import (
-	connect "connectrpc.com/connect"
 	context "context"
 	errors "errors"
-	v1 "github.com/grpc-server-demo/wallet/gen/go/api/user/v1"
 	http "net/http"
 	strings "strings"
+
+	connect "connectrpc.com/connect"
+	v1 "github.com/grpc-connectgo-api-demo/wallet/gen/go/api/user/v1"
 )
 
 // This is a compile-time assertion to ensure that this generated file and the connect package are

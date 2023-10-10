@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package api.user.v1;
 
-option go_package = "github.com/grpc-server-demo/wallet/gen/go/api/user/v1;userv1";
+option go_package = "github.com/grpc-connectgo-api-demo/wallet/gen/go/api/user/v1;userv1";
 
 service UserService {
   rpc RegisterUser(RegisterUserRequest) returns (RegisterUserResponse) {}

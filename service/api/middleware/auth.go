@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/grpc-server-demo/wallet/pkg/jwt"
+	"github.com/grpc-connectgo-api-demo/wallet/pkg/jwt"
 
 	"connectrpc.com/connect"
-	"github.com/grpc-server-demo/wallet/gen/go/api/user/v1/userv1connect"
+	"github.com/grpc-connectgo-api-demo/wallet/gen/go/api/user/v1/userv1connect"
 )
 
 var (

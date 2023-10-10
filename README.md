@@ -8,7 +8,9 @@ basic gRPC API server which supports user registration, login and getting user p
 - [buf](https://buf.build/) - tools to simplify dealing with protocol buffers
 - [postgresql](https://www.postgresql.org/) - relational database to store users
 - [sqlc](https://github.com/sqlc-dev/sqlc) - type-safe SQL compiler
+- [migrate](https://github.com/golang-migrate/migrate) - db migrations library
 - [JSON Web Tokens (JWT)](https://jwt.io/) - user claims
+- [docker-compose](https://docs.docker.com/compose/) - tool to simplify running local Docker containers 
 
 
 ## RPC methods

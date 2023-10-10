@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "4c7a08e4-0399-488d-b664-087ddb506928",
+		"name": "grpc-server-demo-wallet-rest-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18535776"
+	},
+	"item": [
+		{
+			"name": "RegisterUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"john\",\n    \"last_name\": \"smith\",\n    \"email\": \"jsmith@pm.me\",\n    \"password\": \"changeme\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/api.user.v1.UserService/RegisterUser",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api.user.v1.UserService",
+						"RegisterUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"jsmith@pm.me\",\n    \"password\": \"changeme\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/api.user.v1.UserService/LoginUser",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api.user.v1.UserService",
+						"LoginUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserProfile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY3NjkzMjMsInVzZXJfdXVpZCI6IjIyNDJhNGM1LTNiZjctNGVjYy05NTczLTRhN2RhMDdhMGU3ZCJ9.kRBwnTMLC7WX1ZY-oHNfPEQ4zrk419clADaKu2zFMKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uuid\" : \"2242a4c5-3bf7-4ecc-9573-4a7da07a0e7d\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/api.user.v1.UserService/GetUserAccount",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api.user.v1.UserService",
+						"GetUserAccount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package api.user.v1;
+
+option go_package = "github.com/grpc-server-demo/wallet/gen/go/api/user/v1;userv1";
+
+service UserService {
+  rpc RegisterUser(RegisterUserRequest) returns (RegisterUserResponse) {}
+  rpc LoginUser(LoginUserRequest) returns (LoginUserResponse) {}
+  rpc GetUserAccount (GetUserAccountRequest) returns (GetUserAccountResponse) {}
+}
+
+message RegisterUserRequest {
+  string email = 1 ;
+  string first_name = 2;
+  string last_name = 3;
+  string password = 4;
+}
+
+message RegisterUserResponse {
+  string message = 1;
+  string status = 2;
+  string uuid = 3;
+}
+
+message LoginUserRequest {
+  string email = 1;
+  string password = 2;
+}
+
+message LoginUserResponse {
+  string message = 1;
+  string status = 2;
+  string access_token = 3;
+}
+
+message LogoutUserRequest {
+  string uuid = 1;
+}
+
+message LogoutUserResponse {
+  string message = 1;
+  string status = 2;
+}
+
+message GetUserAccountRequest {
+  string uuid = 1;
+}
+
+message GetUserAccountResponse {
+  UserAccount user_account = 1;
+  string status = 2;
+}
+
+message UserAccount {
+  string uuid = 1;
+  string email = 2 ;
+  string first_name = 3;
+  string last_name = 4;
+  bool email_verified = 5;
+}

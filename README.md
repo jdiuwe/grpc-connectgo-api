@@ -3,10 +3,12 @@
 basic gRPC API server which supports user registration, login and getting user profile.
 
 ### Components:
-- connect-go - implementation of Protobuf RPC to build gRPC-compatible HTTP API.
-- protobuf - protocol buffer schema to define rpc methods and payload
-- postgresql - relational database to store users
-- JSON Web Tokens (JWT) - user claims
+- [connect-go](https://connectrpc.com/) - implementation of Protobuf RPC to build gRPC-compatible HTTP API.
+- [protobuf](https://protobuf.dev/getting-started/gotutorial/) - protocol buffer schema to define rpc methods and payload
+- [buf](https://buf.build/) - tools to simplify dealing with protocol buffers
+- [postgresql](https://www.postgresql.org/) - relational database to store users
+- [sqlc](https://github.com/sqlc-dev/sqlc) - type-safe SQL compiler
+- [JSON Web Tokens (JWT)](https://jwt.io/) - user claims
 
 
 ## RPC methods

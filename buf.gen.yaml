@@ -12,5 +12,3 @@ plugins:
     out: gen/go
     opt:
       - paths=source_relative
-#  - plugin: buf.build/bufbuild/protovalidate
-#    out: gen/go
